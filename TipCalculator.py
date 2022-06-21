@@ -1,0 +1,8 @@
+print("Welcome to the tio calculator ")
+bill = float(input("What was the total bill? "))
+percent = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+split_bil = int(input("How many people to split the bill? "))
+bill +=bill*(percent/100)
+# pay = round((bill/split_bil),2)
+pay = "{:.2f}".format(bill/split_bil)
+print(f"Each person should pay {pay} ")

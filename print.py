@@ -1,0 +1,5 @@
+number = int(input("Enter the number "))
+# # num1 = int(number[0])
+# # num2= int(number[1])
+# #print(num1+num2)
+print(type(number))
