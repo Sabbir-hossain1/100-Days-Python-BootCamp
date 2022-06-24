@@ -25,7 +25,7 @@ while not bidding_finish:
         find_height_bidder(bidding_dictionary)
     elif should_continue == "yes":
         os.system('cls')
-        
+         
         
 
 
