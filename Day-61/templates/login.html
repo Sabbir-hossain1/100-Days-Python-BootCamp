@@ -1,0 +1,39 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %} login page {% endblock %}
+
+{% block content %}
+        <div class="container">
+		<h1>Login</h1>
+            <!-- form using wtf and bootstrap quick solution -->
+			{{ wtf.quick_form(form, novalidate=True) }}
+
+            <!-- form using wtf and bootstrap long solution -->
+
+<!--            {{form.csrf_token}}-->
+<!--            {{wtf.form_field(form.email)}}-->
+<!--            {{wtf.form_field(form.password)}}-->
+<!--            {{wtf.form_field(form.submit)}}-->
+
+            <!-- this is normal form using wtf -->
+
+<!--			<form method="POST" action="{{url_for('login')}}" novalidate>-->
+<!--				{{form.csrf_token}}-->
+<!--				<p>-->
+<!--					{{form.email.label}} <br> {{form.email(size=30)}}<br>-->
+<!--					{% for err in form.email.errors %}-->
+<!--						<span style="color:red">{{err}}</span>-->
+<!--					{% endfor %}-->
+<!--				</p>-->
+<!--				<p>-->
+<!--					{{form.password.label}} <br> {{form.password(size=30)}}<br>-->
+<!--					{% for err in form.password.errors %}-->
+<!--						<span style="color:red">{{err}}</span>-->
+<!--					{% endfor %}-->
+<!--				</p>-->
+<!--				{{form.submit}}-->
+<!--			</form>-->
+        </div>
+{% endblock %}
